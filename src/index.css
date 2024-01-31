@@ -1,0 +1,142 @@
+:root {
+  --font-200: 0.5rem;
+  --font-300: 0.6rem;
+  --font-400: 0.8rem;
+  --font-500: 1rem;
+  --font-600: 1.2rem;
+  --font-xl: 3rem;
+
+  --clr-text: #e7dac7;
+  --clr-primary: #241f1c;
+  --clr-accent: #937047;
+  --clr-accent-dark: #644c30;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  color: var(--clr-text);
+  font-size: 1.25rem;
+  font-family: "Comfortaa", sans-serif;
+  background: var(--clr-primary);
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+button {
+  font-size: var(--font-300);
+  background: var(--clr-accent);
+  cursor: pointer;
+  padding: 0.75em 2em;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+button:hover {
+  background: var(--clr-accent-dark);
+}
+
+input {
+  width: min(100%, 35rem);
+  height: 2rem;
+  font-size: var(--font-400);
+}
+
+/* typography */
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: var(--font-xl);
+  color: var(--clr-text);
+}
+
+h2 {
+  font-size: var(--font-600);
+  margin: 0;
+  padding: 0;
+}
+
+/* home */
+
+.home {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  min-height: 30rem;
+  align-items: center;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* card */
+
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: rgba(255, 255, 255, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  text-align: left;
+}
+
+.genre {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+code {
+  font-size: var(--font-200);
+  border: 1px solid #333;
+  background: var(--clr-primary);
+  border-radius: 5px;
+  color: white;
+  padding: 0.1em 0.5em;
+}
+
+code + code {
+  margin: 2px;
+}
+
+.info {
+  padding: 0.5em;
+}
+
+/* about & form */
+
+.about,
+.form {
+  text-align: left;
+  padding: min(10%, 5rem);
+  max-width: 1576px;
+}
+
+.summary {
+  font-size: var(--font-600);
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.about button,
+.form button {
+  font-size: var(--font-500);
+  font-weight: bold;
+}
